@@ -351,7 +351,7 @@
   <header class="hero">
     <p class="eyebrow" data-i18n="eyebrow">Rechtliches</p>
     <h1 data-i18n="title">Impressum</h1>
-    <p class="sub" data-i18n="subtitle">Angaben gemäß § 5 TMG</p>
+    <p class="sub" data-i18n="subtitle">Angaben gemäß § 5 DDG</p>
   </header>
 
   <main class="content">
@@ -404,7 +404,7 @@
         tagDefault: "Standard",
         eyebrow: "Rechtliches",
         title: "Impressum",
-        subtitle: "Angaben gemäß § 5 TMG",
+        subtitle: "Angaben gemäß § 5 DDG",
         provider: "Anbieter",
         name: "Name",
         address: "Anschrift",
@@ -426,7 +426,7 @@
         tagDefault: "Default",
         eyebrow: "Legal",
         title: "Legal Notice",
-        subtitle: "Information according to § 5 TMG (German law)",
+        subtitle: "Information according to § 5 DDG (German law)",
         provider: "Provider",
         name: "Name",
         address: "Address",
@@ -448,7 +448,7 @@
         tagDefault: "Par défaut",
         eyebrow: "Mentions légales",
         title: "Mentions légales",
-        subtitle: "Informations conformément au § 5 TMG (droit allemand)",
+        subtitle: "Informations conformément au § 5 DDG (droit allemand)",
         provider: "Éditeur",
         name: "Nom",
         address: "Adresse",
@@ -470,7 +470,7 @@
         tagDefault: "Predeterminado",
         eyebrow: "Aviso legal",
         title: "Aviso legal",
-        subtitle: "Información según el § 5 TMG (ley alemana)",
+        subtitle: "Información según el § 5 DDG (ley alemana)",
         provider: "Responsable",
         name: "Nombre",
         address: "Dirección",
@@ -492,7 +492,7 @@
         tagDefault: "افتراضي",
         eyebrow: "قانوني",
         title: "بيان قانوني",
-        subtitle: "معلومات وفقًا للمادة § 5 TMG (القانون الألماني)",
+        subtitle: "معلومات وفقًا للمادة § 5 DDG (القانون الألماني)",
         provider: "مقدّم الخدمة",
         name: "الاسم",
         address: "العنوان",
@@ -514,7 +514,7 @@
         tagDefault: "По умолчанию",
         eyebrow: "Правовая информация",
         title: "Выходные данные",
-        subtitle: "Сведения согласно § 5 TMG (законодательство Германии)",
+        subtitle: "Сведения согласно § 5 DDG (законодательство Германии)",
         provider: "Владелец сайта",
         name: "Имя",
         address: "Адрес",
@@ -536,7 +536,7 @@
         tagDefault: "Varsayılan",
         eyebrow: "Yasal",
         title: "Yasal Bildirim",
-        subtitle: "§ 5 TMG uyarınca bilgiler (Alman hukuku)",
+        subtitle: "§ 5 DDG uyarınca bilgiler (Alman hukuku)",
         provider: "Sağlayıcı",
         name: "Ad",
         address: "Adres",
@@ -613,7 +613,6 @@
       if (e.key === "Escape") togglePanel(false);
     });
 
-    // Sprache erkennen: gespeicherte Auswahl > Browsersprache > Deutsch als Standard
     (function detectLanguage() {
       const saved = localStorage.getItem("preferredLang");
       if (saved && translations[saved]) {
